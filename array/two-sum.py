@@ -1,10 +1,10 @@
 class Solution:
-    def twoSum(self, nums:list[int], target:int) ->list[int]:
-        hmap ={ }
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        visitedMap = {}
 
         for i,n in enumerate(nums):
             diff = target - n 
-            if diff in hmap:
-                return[hmap[diff], i]
-            
-            hmap[n] = i
+            if diff in visitedMap: 
+                return [visitedMap[diff], i]
+            visitedMap[n] = i 
+        return  
