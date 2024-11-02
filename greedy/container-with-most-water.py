@@ -18,7 +18,9 @@ class Solution:
         #Move the pointer on the least height 
             if height[left] < height[right] :
                 left +=1
-            else :
-                height[right] < height[left]
+            elif height[right] < height[left] :
                 right -=1
+            else:
+                height[left] = height[right]
+                left +=1
         return max_area 
