@@ -1,7 +1,7 @@
 class Solution:
     def maxSlidingWindow(self, nums: List[int], k: int) -> List[int]:
         #edge case , when the list is empty or k = 0
-        if not nums or k = 0:
+        if not nums or k == 0:
             return []
 
         #variables
@@ -24,7 +24,7 @@ class Solution:
 
             #append the max value of the window to result 
             if i > k - 1:
-                result.append[nums[deq[0]]]
+                result.append(nums[deq[0]])
         return result
 
 
