@@ -13,5 +13,5 @@ class Solution:
                 #increment the sequence 
                 while num + current_length in numSet:
                     current_length += 1
-            longest = max(longest, current_length)
+                longest = max(longest, current_length)
         return longest 
